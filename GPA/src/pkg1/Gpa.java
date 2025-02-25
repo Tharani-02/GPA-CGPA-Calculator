@@ -13,15 +13,11 @@ public class Gpa {
 		boolean moreSemester=false;
 		
 		do {
-			
-
 			int totalPoints=0;
 			int totalCredits=0;
 			boolean moreSub = false;
-			
-			
+						
 			do {
-				
 				System.out.println("Enter a credit");
 				int credit = sc.nextInt();
 					 
@@ -70,8 +66,7 @@ public class Gpa {
 			
 			Double gpa = Double.valueOf(totalPoints) / Double.valueOf(totalCredits);	
 			System.out.println("Your GPA for this semester: "+ df.format(gpa));
-			
-			
+						
 			totalSemesterPoints += totalPoints;
 			totalSemsterCredits += totalCredits;
 			
